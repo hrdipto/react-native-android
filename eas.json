@@ -1,0 +1,33 @@
+{
+  "cli": {
+    "version": ">= 1.2.0"
+  },
+  "build": {
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    },
+    "preview": {
+      "distribution": "internal"
+    },
+    "apk_preview": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "production": {}
+  },
+  "submit": {
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "service-account.json",
+        "track": "production"
+      },
+      "ios": {
+        "appleId": "john@turtle.com",
+        "ascAppId": "1234567890",
+        "appleTeamId": "AB12XYZ34S"
+      }
+    }
+  }
+}
